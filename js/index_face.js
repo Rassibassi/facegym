@@ -6,8 +6,8 @@ const ulEl = document.getElementById("expressions");
 
 const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 256 });
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.loadFaceExpressionModel('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('/facegym/models'),
+  faceapi.loadFaceExpressionModel('/facegym/models')
 ]);
 
 const expressions_list = ['neutral',

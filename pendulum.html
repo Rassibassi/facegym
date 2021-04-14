@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="js/matter.min.js"></script>
+	<script src="js/face-api.min.js"></script>
+</head>
+<body>
+<div id="video_container">
+	<video id="video" onloadedmetadata="onPlay(this)" width="360px" height="280px" autoplay muted></video>
+	<div>
+		Box:
+		<ul>
+			<li>height/width: <span id="box_dim"></span></li>
+			<li>x/y: <span id="box_xy"></span></li>
+		</ul>
+		Expression:
+		<ul id="expressions">
+			
+		</ul>
+	<div>
+	</div>
+		Instructions:
+		<ul>
+			<li>Happy: apply force towards right</li>
+			<li>Surprised/Angry: apply force towards left</li>
+		</ul>
+	</div>
+</div>
+<div id="game_container">
+	
+</div>
+<script src="js/index_face.js"></script>
+<script src="js/pendulum.js"></script>
+</body>
+</html>
